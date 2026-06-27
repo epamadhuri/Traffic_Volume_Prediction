@@ -59,6 +59,13 @@ We built an ensemble model (**LightGBM + XGBoost**) with feature engineering, hy
 ---
 
 ## 🚀 Deployment
+-Originally, the project deliverables mentioned a Flask web application.  
+However, since Flask servers face tunneling and blocking issues in Google Colab, we deployed the model using **Gradio** instead.  
+
+Gradio provides:
+- An interactive web interface directly in Colab.
+- A shareable `.gradio.live` link for testing and demonstration.
+- Simplified integration without additional server setup.
 - **Gradio App:** Interactive interface for predictions  
 - **Demo Link:** [https://06be4e819d29486a7b.gradio.live](https://06be4e819d29486a7b.gradio.live)  
 
