@@ -67,7 +67,19 @@ Gradio provides:
 - A shareable `.gradio.live` link for testing and demonstration.
 - Simplified integration without additional server setup.
 - **Gradio App:** Interactive interface for predictions  
-- **Demo Link:** [https://06be4e819d29486a7b.gradio.live](https://06be4e819d29486a7b.gradio.live)  
+- **Demo Link:** [https://06be4e819d29486a7b.gradio.live](https://06be4e819d29486a7b.gradio.live)
+
+
+
+- ## 🌐 REST API Endpoints
+As part of project deliverables, we provide REST API endpoints using FastAPI:
+
+- `GET /` → Health check, returns API status.
+- `POST /predict` → Accepts input features (hour, day_of_week, temp, rain, snow, weekend) and returns predicted traffic volume.
+
+This demonstrates how the trained models can be served as a REST API.  
+For interactive testing, we used Gradio in Colab. For production, the same models can be deployed via FastAPI/Flask.
+ 
 
 ---
 
@@ -79,6 +91,6 @@ Gradio provides:
 ---
 
 ## 🔮 Future Improvements
-- Flask/REST API deployment on cloud (Heroku/Render).  
+- Deploy flask/REST API deployment on cloud (Heroku/Render).  
 - Real‑time data ingestion from sensors.  
 - Dashboard integration for visualization.
