@@ -94,3 +94,27 @@ For interactive testing, we used Gradio in Colab. For production, the same model
 - Deploy flask/REST API deployment on cloud (Heroku/Render).  
 - Real‑time data ingestion from sensors.  
 - Dashboard integration for visualization.
+
+
+
+## 📊 Model Performance Report
+
+We evaluated multiple regression models (LightGBM, XGBoost, and blended ensemble) on the engineered dataset. Performance was measured using R², MAE, and RMSE.
+
+### 🔎 Key Metrics
+- **R² Score:** 0.986 → Very high accuracy, explaining ~98.6% of variance.  
+- **MAE:** 150.9 → Average prediction error is ~151 traffic units.  
+- **RMSE:** 229.8 → Larger errors penalized more, showing overall error spread.  
+
+### 📈 Visualizations
+- **Actual vs Predicted Plot** → Strong alignment between predicted and true values.  
+- **Residual Distribution** → Errors centered around zero, indicating unbiased predictions.  
+- **Feature Importance** → Lag features, cyclical encodings (hour/day), and rolling statistics were most influential. 
+
+### ✅ Insights
+- Ensemble blending improved stability compared to single models.  
+- High R² and low RMSE confirm strong predictive performance.  
+- Feature engineering (lags, rolling means, cyclical time features) significantly boosted accuracy.
+   
+
+  
